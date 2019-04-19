@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Interactor</title>
+    <style>
+      #grid{
+        /* border: 1px solid green; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px;
+        /* padding: 2px; */
+
+      }
+      #grid .first, .second, .third, .fourth{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+      }
+
+      #grid div{
+      
+      }
+      .first, .second, .third, .fourth{
+        margin: 1px;
+        border:1px solid #009900;
+
+      }
+      .box1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 1 / 2;
+        border:0px solid grey;
+      }
+      .box2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 1 / 2;
+      }
+      .box3{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row: 1 / 2;
+
+      }
+      .box4{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 2 / 4;
+      }
+      .box5{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 2 / 4;
+      }
+      .box6{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row: 2 / 4;
+      }
+      .miniBox{
+        margin-top: 20px;
+        height: 100px;
+        margin: 10px;
+      }
+      h2{
+        padding:5px;
+        margin-left:20px;
+      }
+      i{
+        text-align: right;
+        padding-left:170px;
+        padding-top:30px;
+      }
+      input{
+        margin-top: 33px;
+
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="grid">
+      <div class="first">
+        <div class="box1">
+          <h2>Firewalls</h2>
+        </div>
+        <div class="box2">
+          <i class="fa fa-download" style="font-size:24px"></i>
+        </div>
+        <div class="box3">
+          <input type="search" placeholder="search" style="margin-left:10px; width:140px; height:30px">
+        </div>
+        <div class="box4">
+          <div class="miniBox">
+            ddd
+          </div>
+        </div>
+        <div class="box5">
+          <div class="miniBox">
+            ddd
+          </div>
+        </div>
+        <div class="box6">
+          five
+        </div>
+      </div>
+      <div class="second">
+        <div class="box1">
+          <h2>Firewalls</h2>
+        </div>
+        <div class="box2">
+          <i class="fa fa-download" style="font-size:24px"></i>
+        </div>
+        <div class="box3">
+          <input type="text" name="" value="" placeholder="search">
+        </div>
+        <div class="box4">
+          <div class="miniBox">
+            ddd
+          </div>
+        </div>
+        <div class="box5">
+          <div class="miniBox">
+            ddd
+          </div>
+        </div>
+        <div class="box6">
+          five
+        </div>
+      </div>
+    </div>
+    <div id="grid">
+      <div class="third">
+        <div class="box1">
+          <h2>Firewalls</h2>
+        </div>
+        <div class="box2">
+          <i class="fa fa-download" style="font-size:24px"></i>
+        </div>
+        <div class="box3">
+          <input type="text" name="" value="" placeholder="search">
+        </div>
+        <div class="box4">
+          <div class="miniBox">
+            ddd
+          </div>
+        </div>
+        <div class="box5">
+          <div class="miniBox">
+            ddd
+          </div>
+        </div>
+        <div class="box6">
+          five
+        </div>
+
+      </div>
+      <div class="fourth">
+        <div class="box1">
+          <h2>Firewalls</h2>
+        </div>
+        <div class="box2">
+          <i class="fa fa-download" style="font-size:24px"></i>
+        </div>
+        <div class="box3">
+          <input type="text" name="" value="" placeholder="search">
+        </div>
+        <div class="box4">
+          <div class="miniBox">
+            ddd
+          </div>
+        </div>
+        <div class="box5">
+          <div class="miniBox">
+            ddd
+          </div>
+        </div>
+        <div class="box6">
+          five
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
