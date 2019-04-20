@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Interactor_flexbox_version</title>
+    <style media="screen">
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      .container {
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .container > div {
+        display: flex;
+        flex-basis: calc(50% - 10px);
+        flex-direction: column;
+      }
+      .container > div > div {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .box {
+      margin: 1px;
+      border: 1px solid grey;
+      }
+
+      .item1{
+        flex-basis: calc(20% - 10px);
+      }
+
+      .item2{
+        flex-basis: calc(80% - 10px);
+      }
+      .box2.item2{
+        flex-direction: column;
+      }
+      .name{
+        flex-basis: calc(60% - 10px);
+      }
+      .icon{
+        flex-basis: calc(20% - 10px);
+      }
+      .search{
+        flex-basis: calc(40% - 10px);
+      }
+      .box1.item2.bucket1{
+        flex-basis: calc(33.3% -10px);
+      }
+      .box1.item2.bucket2{
+        flex-basis: calc(33.3% -10px);
+      }
+      .box1.item2.bucket3{
+        flex-basis: calc(33.3% -10px);
+      }
+
+      .box.box2.item2.bucket1{
+        flex-basis: calc(20% -10px);
+      }
+      .box.box2.item2.bucket2{
+        flex-basis: calc(20% -10px);
+      }
+      .box.box2.item2.bucket3{
+        flex-basis: calc(20% -10px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">
+        <div class ="box box1 item1">
+          <div class = "box box1 item1 name">
+            Firewalls
+          </div>
+          <div class = "box box1 item1 icon">
+            Firewalls
+          </div>
+          <div class = "box box1 item1 search">
+            Firewalls
+          </div>
+        </div>
+
+        <div class ="box box1 item2">
+          <div class="box box1 item2 bucket1">
+            bucket1
+          </div>
+          <div class="box box1 item2 bucket2">
+            bucket2
+          </div>
+          <div class="box box1 item2 bucket3">
+            bucket3
+          </div>
+        </div>
+      </div>
+
+      <div class="box box2">
+        <div class="box item1">
+          <div class="box name">
+              Logs
+          </div>
+          <div class="box search">
+            search
+          </div>
+        </div>
+
+        <div class="box box2 item2">
+          <div class="box box2 item2 bucket1">
+            one
+          </div>
+          <div class="box box2 item2 bucket2">
+            two
+          </div>
+          <div class="box box2 item2 bucket3">
+            Three
+          </div>
+        </div>
+      </div>
+      <div class="box box3">
+        <div class="box item1">
+            <p class = "box name">title</p>
+            <i class = "box icon">dd</i>
+        </div>
+        <div class="box box2 item2">
+          <div class="box box2 item2 bucket1">
+            one
+          </div>
+          <div class="box box2 item2 bucket2">
+            two
+          </div>
+          <div class="box box2 item2 bucket3">
+            Three
+          </div>
+        </div>
+      </div>
+      <div class="box box4">
+        <div class="box item1">title</div>
+        <div class="box box2 item2">
+          <div class="box box2 item2 bucket1">
+            one
+          </div>
+          <div class="box box2 item2 bucket2">
+            two
+          </div>
+          <div class="box box2 item2 bucket3">
+            Three
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

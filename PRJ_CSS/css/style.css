@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.container > div {
+  display: flex;
+  flex-basis: calc(50% - 10px);
+  flex-direction: column;
+}
+.container > div > div {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.box {
+margin: 1px;
+border: 1px solid green;
+}
+
+.bucket1{
+  flex-basis: calc(20% - 10px);
+}
+.bucket2{
+  flex-basis: calc(80% - 10px);
+}
+
+.item1{
+  flex-basis: calc(60% - 10px);
+}
+.item2{
+  flex-basis: calc(20% - 10px);
+}
+.item3{
+  flex-basis: calc(40% - 10px);
+}
