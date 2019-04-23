@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .line{
+        border: 1px solid grey;
+      }
+      .container{
+        display:flex;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: space-around;
+        flex-direction:row;
+        justify-content:center;
+      }
+      .flex-container > div {
+        background-color: DodgerBlue;
+        color: white;
+        width: 80px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+
+
+
+      }
+
+      .item{
+          flex-basis:calc(20% - 10px);
+          height: 200px;
+          margin:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="line container">
+      <div class="line item">
+        사진1
+      </div>
+      <div class="line item">
+        사진2
+      </div>
+      <div class="line item">
+        사진3
+      </div>
+      <div class="line item">
+        사진3
+      </div>
+      <div class="line item">
+        사진3
+      </div>
+      <div class="line item">
+        사진3
+      </div>
+    </div>
+  </body>
+</html>

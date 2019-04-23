@@ -31,7 +31,10 @@ border: 1px solid green;
 .bucket2{
   flex-basis: calc(100% - 10px);
 }
-
+.namebox{
+  width:30%;
+  padding-left: 10px;
+}
 .name{
   flex-basis: calc(60% - 10px);
 }

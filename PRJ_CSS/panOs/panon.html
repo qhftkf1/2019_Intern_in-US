@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <style>
+    p{
+      font-size:12px;
+    }
+    th{
+      padding-left:10px;
+      padding-right:20px;
+    }
+    .row{
+
+    }
+    .line{
+      border:1px solid white;
+    }
+    .component1, .component2, .component3{
+      height:350px;
+    }
+    .component4{
+      height:260px;
+    }
+    .component5{
+      height:200px;
+    }
+    .system{
+      width:90%;
+      height:100%;
+    }
+    .panel-info{
+      margin-left:20px;
+      margin-right:5%;
+
+    }
+    .title{
+      backgroud-color:#d1dcfc;
+    }
+    .resources{
+      width:80%;
+      height:100%;
+    }
+    .storage{
+      width:70%;
+      height:100%;
+    }
+    .performance{
+      margin-top:30px;
+      width:91%;
+      height:90%;
+    }
+    .events{
+      margin-top:30px;
+      width:91%;
+      height:80%;
+    }
+    .table{
+      margin-top:20%;
+      margin-bottom:10%;
+    }
+  </style>
+  <body>
+    <div class="lien row">
+      <div class="line col-md-5 component1">
+        <div class="panel panel-info system">
+         <div class="panel-heading title">System</div>
+         <div class="panel-body">
+           <p>Hostname:Interactor</p>
+           <p>IP:10.109.8.17</p>
+           <p>Netmask:255.255.255.0</p>
+           <p>Gateway:10.109.8.1</p>
+           <p>Version:3.1.5r2</p>
+           <p>Updated:Apr 10, 2019 4:52:10</p>
+           <p>License:Trial, Expires 9/1/2019</p>
+           <p>Uptime:105days</p>
+           <p>Since:Mar 31, 2019</p>
+           <p>Serial:Tr23450693</p>
+         </div>
+       </div>
+      </div>
+      <div class="line col-md-3 component2">
+        <div class="panel panel-info resources">
+         <div class="panel-heading">Resources</div>
+         <div class="panel-body">
+            <table align="center">
+              <tr>
+                <th>Nodes</th>
+                <th>1</th>
+              </tr>
+              <tr>
+                <th>CPU</th>
+                <th>1</th>
+              </tr>
+              <tr>
+                <th>RAM</th>
+                <th>16GB</th>
+              </tr>
+              <tr>
+                <th>Storage</th>
+                <th>5 TB</th>
+              </tr>
+              <tr>
+                <th>Disks</th>
+                <th>5</th>
+              </tr>
+              <tr>
+                <th>Alarms</th>
+                <th>None</th>
+              </tr>
+            </table>
+         </div>
+       </div>
+      </div>
+      <div class="line col-md-4 component3">
+        <div class="panel panel-info storage">
+         <div class="panel-heading">Storage</div>
+         <div class="panel-body">
+           <table align="center">
+             <tr style="border-bottom: 2px solid #ddd">
+               <th>Disk</th>
+               <th>Capacity</th>
+               <th>Status</th>
+             </tr>
+             <tr>
+               <th>Disk1</th>
+               <th>1Tb</th>
+               <th>Ok</th>
+             </tr>
+             <tr>
+               <th>Disk2</th>
+               <th>1Tb</th>
+               <th>Ok</th>
+             </tr>
+             <tr>
+               <th>Disk3</th>
+               <th>1Tb</th>
+               <th>Ok</th>
+             </tr>
+             <tr>
+               <th>Disk4</th>
+               <th>1Tb</th>
+               <th>Ok</th>
+             </tr>
+             <tr>
+               <th>Disk5</th>
+               <th>1Tb</th>
+               <th>Ok</th>
+             </tr>
+           </table>
+         </div>
+       </div>
+      </div>
+
+    </div>
+    <div class="line row">
+      <div class="line col-md-12 component4">
+        <div class="panel panel-info performance ">
+         <div class="panel-heading">Performance Overview</div>
+         <div class="panel-body">
+
+         </div>
+       </div>
+      </div>
+    </div>
+
+    <div class="line row">
+      <div class="line col-md-12 component5">
+        <div class="panel panel-info events ">
+         <div class="panel-heading">System events</div>
+         <div class="panel-body">
+           <table>
+               <tr style="border-bottom: 2px solid #ddd">
+                 <th>Time:</th>
+                 <th>Event:</th>
+                 <th>Severity</th>
+               </tr>
+               <tr>
+                 <th>2019/21/04:14:55:12</th>
+                 <th>Lost connection with Splunk source</th>
+                 <th>High</th>
+               </tr>
+               <tr>
+                 <th>2019/19/18:22:01:54</th>
+                 <th>Transform failed</th>
+                 <th>Medium</th>
+               </tr>
+             </table>
+         </div>
+       </div>
+      </div>
+    </div>
+  </body>
+</html>
