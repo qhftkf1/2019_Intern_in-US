@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style media="screen">
+    th{
+      padding-left:10px;
+      padding-right:20px;
+    }
+
+    .table{
+      width:70%;
+    }
+    .line{
+      border:1px solid 	#B0E0E6;
+    }
+    .component6, .component7{
+      height:150px;
+      padding-left:50px;
+      padding-top:2%;
+    }
+    .component8{
+      height:250px;
+      text-align:left;
+      margin-left:50px;
+    }
+    .component9{
+      height:200px;
+      text-align:left;
+      margin-left:50px;
+    }
+    .device1, .device2{
+      height:90%;
+      width:80%;
+      text-align:left;
+      padding-left:5px;
+    }
+
+    .backgroudBlue{
+      backgroud-color:#87CEFA;
+    }
+
+  </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-md-4 component6">
+        <div class="line device1">
+          <p>Unique devices: 5</p>
+        </div>
+      </div>
+      <div class="col-md-4 component7">
+        <div class="line device2">
+          <p>Data source: 5</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="component8">
+        <table class="table table-striped">
+            <tr class= "info" style="border-bottom: 2px solid #B0E0E6">
+              <th>Data Source</th>
+              <th>Type</th>
+              <th>Connector</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <th>Syslog-1</th>
+              <th>Direct</th>
+              <th>none</th>
+              <th>active</th>
+            </tr>
+            <tr>
+              <th>Splunk-1</th>
+              <th>API</th>
+              <th>splk-conn</th>
+              <th>active</th>
+            </tr>
+            <tr>
+              <th>Panorama-1</th>
+              <th>API</th>
+              <th>panorama-conn</th>
+              <th>active</th>
+            </tr>
+            <tr>
+              <th>Splunk-2</th>
+              <th>API</th>
+              <th>splk-conn</th>
+              <th>active</th>
+            </tr>
+          </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="component9">
+        <table class="table table-striped">
+            <tr class="info" style="border-bottom: 2px solid #B0E0E6">
+              <th>Device</th>
+              <th>Hostname</th>
+              <th>Source</th>
+              <th>Last transaction</th>
+              <th>future</th>
+            </tr>
+            <tr>
+              <th>10.3.4.5</th>
+              <th>FW01DC019</th>
+              <th>Splunk-2</th>
+              <th>2019/21/04:14:55:12</th>
+              <th></th>
+            </tr>
+            <tr>
+              <th>10.189.4.5</th>
+              <th>fw-jnpr-ofc-10</th>
+              <th>Syslog-1</th>
+              <th>2019/21/04:14:55:12</th>
+              <th></th>
+            </tr>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+
+          </table>
+      </div>
+
+    </div>
+  </body>
+</html>
