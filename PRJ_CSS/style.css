@@ -30,10 +30,10 @@ i{
   flex-basis: calc(50% - 10px);
   flex-direction: column;
 }
-.container > div > div {
+/* .container > div > div {
   display: flex;
   flex-direction: row;
-}
+} */
 
 
 .box {
@@ -42,15 +42,34 @@ border: 1px solid green;
 }
 
 .bucket1{
+  display: flex;
+  flex-direction: row;
   flex-basis: calc(20% - 10px);
   align-items: center;
   justify-content:space-between;
 }
 .bucket2{
+  display: flex;
+  flex-direction: row;
   flex-basis: calc(100% - 10px);
+  justify-content: center;
+  overflow-y: scroll;
+
 
 }
+.pan{
+  flex-basis: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left:0px;
+  height: 120%;
+}
+.item{
+  width: 170px;
+  height: 60%;
 
+}
 .name{
   flex-basis: calc(30% - 10px);
   font-size: 25px;
