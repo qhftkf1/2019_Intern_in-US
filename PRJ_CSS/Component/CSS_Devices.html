@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="basicStyle.css">
+  <style>
+
+
+    th{
+      padding-left:10px;
+      padding-right:20px;
+    }
+
+    .table{
+      width:70%;
+    }
+
+    .component6, .component7{
+      height:150px;
+      padding-left:50px;
+      padding-top:3%;
+
+    }
+    .component8, .component9{
+      text-align:left;
+      margin-left:50px;
+      margin-top: 8%;
+    }
+    .component8{
+      height:40%;
+
+    }
+    .component9{
+      height:40%;
+
+    }
+    .device1, .device2{
+      height:90%;
+      width:80%;
+      text-align:center;
+      padding-left:5px;
+      padding-top: 8%;
+    }
+    .line{
+      border: 2px solid #bbb;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class=" row content">
+    <div class=" col-sm-2 sidenav">
+      <img src="img/interactor.png" alt="" style="width:200px; height:80px; padding: 20px;">
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="CSS_DashBoard.html">Dashboard</a></li>
+        <li class="active"><a href="CSS_Devices.html">Devices</a></li>
+        <li><a href="CSS_Interactions.html">Interactions</a></li>
+        <li><a href="CSS_Administration.html">Administration</a></li>
+      </ul><br>
+
+    </div>
+
+    <div class="col-sm-10" style="padding:0">
+
+        <div class=" linebottom row header">
+          <div class=" col-md-4 search_header ">
+            <div class="input-group"style="width:80%">
+              <input type="text" class="form-control" placeholder="Search Dashboard">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" >
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </div>
+          </div>
+          <div class=" col-md-4 license_header">
+            <h5>License:<b>Trial, Expires 9/1/2019</b> </h5>
+          </div>
+          <div class=" col-md-4 logged_header">
+            <h5>Logged in as:<b>admin</b></h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 component6">
+            <div class="line device1">
+              <b>Unique devices: 5</b>
+            </div>
+          </div>
+          <div class="col-md-4 component7">
+            <div class="line device2">
+              <b>Data source: 5</b>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="component8">
+            <table class="table table-striped">
+                <tr class= "linebottom" style="background-color:#1ab39f40" >
+                  <th>Data Source</th>
+                  <th>Type</th>
+                  <th>Connector</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <th>Syslog-1</th>
+                  <th>Direct</th>
+                  <th>none</th>
+                  <th>active</th>
+                </tr>
+                <tr>
+                  <th>Splunk-1</th>
+                  <th>API</th>
+                  <th>splk-conn</th>
+                  <th>active</th>
+                </tr>
+                <tr>
+                  <th>Panorama-1</th>
+                  <th>API</th>
+                  <th>panorama-conn</th>
+                  <th>active</th>
+                </tr>
+                <tr>
+                  <th>Splunk-2</th>
+                  <th>API</th>
+                  <th>splk-conn</th>
+                  <th>active</th>
+                </tr>
+              </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="component9">
+            <table class="table table-striped">
+                <tr class="linebottom" style="background-color:#1ab39f40">
+                  <th>Device</th>
+                  <th>Hostname</th>
+                  <th>Source</th>
+                  <th>Last transaction</th>
+                  <th>future</th>
+                </tr>
+                <tr>
+                  <th>10.3.4.5</th>
+                  <th>FW01DC019</th>
+                  <th>Splunk-2</th>
+                  <th>2019/21/04:14:55:12</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th>10.189.4.5</th>
+                  <th>fw-jnpr-ofc-10</th>
+                  <th>Syslog-1</th>
+                  <th>2019/21/04:14:55:12</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+
+              </table>
+          </div>
+
+        </div>
+    </div>
+
+<!-- <footer class="container-fluid">
+  <p>Footer Text</p>
+</footer> -->
+
+</body>
+</html>

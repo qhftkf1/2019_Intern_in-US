@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="basicStyle.css">
+  <style>
+
+
+    .table{
+      width:70%;
+    }
+
+    .item{
+
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .flex-container > div {
+      background-color: #ffffff;
+      width: 200px;
+      margin: 10px;
+      margin-left: 20px;
+      text-align: center;
+
+      height: 200px;
+      font-size: 20px;
+      padding-top: 20px;
+    }
+    .title, .select{
+      height:70px;
+    }
+    .title{
+      padding-left: 30px;
+    }
+    .select{
+      text-align:right;
+      padding-top: 30px;
+      padding-right:30px;
+      font-weight:bold;
+    }
+    .btn{
+      background-color: #ffffff;
+      color: black;
+
+    }
+    .dropdown-menu{
+      float:none;
+      position: sticky;
+    }
+    .img{
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class=" row content">
+    <div class=" col-sm-2 sidenav">
+      <img src="img/interactor.png" alt="" style="width:200px; height:80px; padding: 20px;">
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="CSS_DashBoard.html">Dashboard</a></li>
+        <li><a href="CSS_Devices.html">Devices</a></li>
+        <li class="active"><a href="CSS_Interactions.html">Interactions</a></li>
+        <li><a href="CSS_Administration.html">Administration</a></li>
+      </ul><br>
+
+    </div>
+
+    <div class="col-sm-10" style="padding:0">
+
+        <div class=" linebottom row header">
+          <div class=" col-md-4 search_header ">
+            <div class="input-group"style="width:80%">
+              <input type="text" class="form-control" placeholder="Search Dashboard">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" >
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </div>
+          </div>
+          <div class=" col-md-4 license_header">
+            <h5>License:<b>Trial, Expires 9/1/2019</b> </h5>
+          </div>
+          <div class=" col-md-4 logged_header">
+            <h5>Logged in as:<b>admin</b></h5>
+          </div>
+        </div>
+
+        <div class=" row">
+          <div class=" col-md-8 title">
+            <h1>Select Data Type</h1>
+          </div>
+          <div class=" col-md-4 select">
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Data type
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Amazon CloudFront</a></li>
+                <li><a href="#">Amazon S3 Audit</a></li>
+                <li><a href="#">Apache</a></li>
+                <li><a href="#">Apache Tomcat</a></li>
+                <li><a href="#">Aws CloudTrail</a></li>
+                <li><a href="#">Cisco ASA</a></li>
+                <li><a href="#">Linux System</a></li>
+                <li><a href="#">Mac OS system</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">Nginx</a></li>
+                <li><a href="#">PaloAlto Networks</a></li>
+                <li><a href="#">Varnish</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div class="line datatype">
+            <div class="img">
+              <img src="img/chain.png" alt="">
+            </div>
+            <div class="imgName">
+              Your Custom <p>App</p>
+            </div>
+          </div>
+          <div class="line datatype">
+            <div class="img">
+              <img src="img/AWS(Cloud).png" alt="">
+            </div>
+            <div class="imgName">
+             Amazon <p>CloudFront</p>
+            </div>
+          </div>
+          <div class="line datatype">
+            <div class="img">
+              <img src="img/AWS(S3).png" alt="">
+            </div>
+            <div class="imgName">
+             Amazon S3<p>Audit</p>
+            </div>
+          </div>
+          <div class="line datatype">
+            <div class="img">
+              <img src="img/Apache.png" alt="">
+            </div>
+            <div class="imgName">
+               Apache
+            </div>
+          </div>
+          <div class="line datatype">
+            <div class="img">
+              <img src="img/Tomcat.png" alt="">
+            </div>
+            <div class="imgName">
+               Apache <p>Tomcat</p>
+            </div>
+          </div>
+          <div class="line datatype">
+            <div class="img">
+              <img src="img/Cisco.png" alt=""style="width:80px; height:80px;">
+            </div>
+            <div class="imgName" >
+             Cisco ASA
+            </div>
+          </div>
+          <div class="line datatype">
+            <div class="img">
+              <img src="img/Linux.png" alt="">
+            </div>
+            <div class="imgName">
+             Linux System
+            </div>
+          </div>
+          <div class="line datatype">
+            <div class="img">
+              <img src="img/apple.png" alt="">
+            </div>
+            <div class="imgName">
+             Mac OS <p>System</p>
+            </div>
+          </div>
+          <div class="line datatype">
+            <div class="img">
+              <img src="img/MySQL.png" alt="">
+            </div>
+            <div class="imgName">
+             MySQL
+            </div>
+          </div>
+          <div class="line datatype">
+            <div class="img">
+              <img src="img/Nginx.png" alt="">
+            </div>
+            <div class="imgName">
+             Nginx
+            </div>
+          </div>
+
+          <div class="line datatype">
+
+          </div>
+        </div>
+
+    </div>
+
+<!-- <footer class="container-fluid">
+  <p>Footer Text</p>
+</footer> -->
+
+</body>
+</html>

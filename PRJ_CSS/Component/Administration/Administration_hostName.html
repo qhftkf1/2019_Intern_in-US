@@ -1,0 +1,141 @@
+<template>
+  <div class=" row Admin">
+    <div class="line admin">
+      Add Admin
+    </div>
+    <table class="table table-striped">
+        <tr class= "linebottom" style="background-color:#1ab39f40" >
+          <th>Admin</th>
+          <th>Type</th>
+          <th>Auth type</th>
+          <th>Account Status</th>
+        </tr>
+        <tr>
+          <th>peter</th>
+          <th>superuser</th>
+          <th>local</th>
+          <th>active</th>
+        </tr>
+        <tr>
+          <th>david</th>
+          <th>superuser</th>
+          <th>local</th>
+          <th>active</th>
+        </tr>
+        <tr>
+          <th>jason</th>
+          <th>superuser</th>
+          <th>local</th>
+          <th>active</th>
+        </tr>
+        <tr>
+          <th>BK</th>
+          <th>superuser</th>
+          <th>local</th>
+          <th>active</th>
+        </tr>
+      </table>
+  </div>
+</template>
+
+<script>
+
+</script>
+
+<style scoped>
+  .row.content {height:1200px}
+
+  .sidenav {
+    background-color: #424242;
+    height: 100%;
+  }
+  h2{
+    color:white;
+  }
+  .logged_header{
+    text-align: right;
+  }
+  .nav{
+    margin-top: 60px;
+  }
+  .nav-pills>li.active>a{
+    background-color:#1AB39F;
+  }
+  a{
+    color:white;
+    font-size:18px;
+    font-style:bold;
+  }
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height: auto;}
+  }
+  .header{
+    padding-left: 0px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin: 0px;
+  }
+  .linebottom{
+    border-bottom: 2px solid #bbb;
+  }
+  .line{
+    border: 2px solid 	#bbb;
+  }
+  li{
+    border: 1px solid #1AB39F;
+    border-radius: 7px;
+  }
+  img{
+
+    width: 100px;
+    height: 90px;
+  }
+
+  .table{
+    width:70%;
+  }
+
+  .Admin, .AdminInput{
+    margin-top:30px;
+    margin-left:50px;
+    width:80%;
+    height:50%;
+  }
+  .table{
+    width:100%;
+    margin-top:20px;
+  }
+  .admin{
+
+    width: 100px;
+    text-align:center;
+    background-color:#1ab39f40;
+
+  }
+  table{
+    margin-left:0px;
+    margin-top:10px;
+
+  }
+
+  th{
+    padding-left:10px;
+    padding-right:20px;
+    padding:10px;
+  }
+  input[type=button]{
+    background-color: #1ab39f40;
+    border: 2px bold #bbb;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    align:center; width:100px;
+  }
+
+
+
+</style>

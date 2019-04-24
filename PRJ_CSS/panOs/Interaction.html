@@ -3,58 +3,160 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <style media="screen">
+    body{
+      background-color: #efefef;
+    }
+    h2{
+      margin-left: 20px;
+    }
       .line{
         border: 1px solid grey;
       }
-      .container{
-        display:flex;
-        height: 600px;
-        flex-wrap: wrap;
-        align-content: space-around;
-        flex-direction:row;
-        justify-content:center;
-      }
-      .flex-container > div {
-        background-color: DodgerBlue;
-        color: white;
-        width: 80px;
-        margin: 10px;
-        text-align: center;
-        line-height: 75px;
-        font-size: 30px;
 
-
-
-      }
 
       .item{
-          flex-basis:calc(20% - 10px);
-          height: 200px;
-          margin:10px;
+
+      }
+      .row{
+
+      }
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .flex-container > div {
+        background-color: #ffffff;
+        width: 200px;
+        margin: 10px;
+        text-align: center;
+        line-height: 200px;
+        height: 200px;
+        font-size: 30px;
+      }
+      .title, .select{
+        height:70px;
+      }
+      .select{
+        text-align:right;
+        padding-top: 30px;
+        padding-right:30px;
+      }
+      .btn{
+        background-color: #ffffff;
+        color: black;
+        border: 0;
+      }
+      .dropdown-menu{
+        float:none;
+        position: sticky;
       }
     </style>
   </head>
   <body>
-    <div class="line container">
-      <div class="line item">
-        사진1
+    <div class=" row">
+      <div class=" col-md-8 title">
+        <h2>Select Data Type</h2>
       </div>
-      <div class="line item">
-        사진2
-      </div>
-      <div class="line item">
-        사진3
-      </div>
-      <div class="line item">
-        사진3
-      </div>
-      <div class="line item">
-        사진3
-      </div>
-      <div class="line item">
-        사진3
+      <div class=" col-md-4 select">
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Data type
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Amazon CloudFront</a></li>
+            <li><a href="#">Amazon S3 Audit</a></li>
+            <li><a href="#">Apache</a></li>
+            <li><a href="#">Apache Tomcat</a></li>
+            <li><a href="#">Aws CloudTrail</a></li>
+            <li><a href="#">Cisco ASA</a></li>
+            <li><a href="#">Linux System</a></li>
+            <li><a href="#">Mac OS system</a></li>
+            <li><a href="#">MySQL</a></li>
+            <li><a href="#">Nginx</a></li>
+            <li><a href="#">PaloAlto Networks</a></li>
+            <li><a href="#">Varnish</a></li>
+          </ul>
+        </div>
       </div>
     </div>
+    <div class="flex-container">
+      <div class="line datatype">
+        1
+      </div>
+      <div class="line datatype">
+        2
+      </div>
+      <div class="line datatype">
+        3
+      </div>
+      <div class="line datatype">
+        4
+      </div>
+      <div class="line datatype">
+        5
+      </div>
+      <div class="line datatype">
+        6
+      </div>
+      <div class="line datatype">
+        7
+      </div>
+      <div class="line datatype">
+        8
+      </div>
+      <div class="line datatype">
+        9
+      </div>
+      <div class="line datatype">
+        10
+      </div>
+      <div class="line datatype">
+        11
+      </div>
+      <div class="line datatype">
+        12
+      </div>
+      <div class="line datatype">
+        13
+      </div>
+      <div class="line datatype">
+        14
+      </div>
+      <div class="line datatype">
+        15
+      </div>
+      <div class="line datatype">
+        16
+      </div>
+      <div class="line datatype">
+        17
+      </div>
+      <div class="line datatype">
+        18
+      </div>
+      <div class="line datatype">
+        19
+      </div>
+      <div class="line datatype">
+        20
+      </div>
+      <div class="line datatype">
+        21
+      </div>
+      <div class="line datatype">
+        22
+      </div>
+      <div class="line datatype">
+        23
+      </div>
+      <div class="line datatype">
+        *
+      </div>
+    </div>
+
   </body>
 </html>
