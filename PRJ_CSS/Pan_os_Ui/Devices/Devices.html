@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title></title>
+    <style>
+      table{
+        width:50%;
+      }
+      th{
+        padding: 10px;
+        text-align:left;
+        font-family:Sans-serif;
+        font-weight:light;
+      }
+      .row{
+        margin:50px;
+      }
+    </style>
+  </head>
+  <body>
+
+      <div class="row">
+        <table>
+          <thead>
+            <tr>
+              <th>Data source</th>
+              <th>Type</th>
+              <th>Connector</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+            <tr>
+              <th>Syslog-1</th>
+              <th>Direct</th>
+              <th>none</th>
+              <th>active</th>
+            </tr>
+          <tr>
+            <th>Splunk-1</th>
+            <th>API</th>
+            <th>splk-conn</th>
+            <th>active</th>
+          </tr>
+          <tr>
+            <th>Panorama-1</th>
+            <th>API</th>
+            <th>Panorama-conn</th>
+            <th>active</th>
+          </tr>
+          <tr>
+            <th>Splunk-2</th>
+            <th>API</th>
+            <th>splk-conn</th>
+            <th>active</th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="row">
+        <table>
+          <tr>
+            <th>Device</th>
+            <th>Hostname</th>
+            <th>Source</th>
+            <th>Last transaction</th>
+            <th>future</th>
+          </tr>
+          <tr>
+            <th>10.3.4.5</th>
+            <th>FW01DC019</th>
+            <th>Splunk-2</th>
+            <th>2019/21/04:14:55:12</th>
+            <th></th>
+          </tr>
+          <tr>
+            <th>10.189.4.5</th>
+            <th>fw-jnpr-ofc-10</th>
+            <th>Syslog-1</th>
+            <th>2019/21/04:14:55:12</th>
+          </tr>
+
+        </table>
+      </div>
+
+  </body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style media="screen">
+      th{
+        padding-left:10px;
+        padding-right:20px;
+       /* border-bottom: 1px solid #ddd; */
+     }
+      p{
+        font-size: 12px;
+      }
+      .row{
+        margin:50px;
+        border: 1px solid #D8EAE9;
+      }
+      .title{
+        /* border: 1px solid #D8EAE9; */
+        padding-left:0px;
+
+        font-size: 16px;
+        background:#D8EAE9;
+
+      }
+      .content{
+        /* border: 1px solid #D8EAE9; */
+        padding-left:10px;
+        padding-top:10px;
+        font-size: 16px;
+        height: 300px;
+      }
+      .graphbox{
+        height: 200px;
+      }
+      .systembox{
+        height: 150px;
+      }
+      .resourcesTable{
+
+        margin-top:14%;
+
+      }
+      .storageTable{
+
+        margin-top:14%;
+
+      }
+      .system, .resources, .storage, .performance{
+        padding:0px;
+        margin-right:0px;
+        border: 1px solid #D8EAE9;
+      }
+      .box{
+        border: 1px solid #D8EAE9;
+        height:80%;
+      }
+      .name{
+        background: #D8EAE9;
+        margin-left:0px;
+      }
+      .tag{
+
+        background: #ffffff;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="row">
+
+      <div class="col-sm-4 system">
+        <div class="title">
+          System
+        </div>
+        <div class="content">
+          <p>Hostname : Interactor</p>
+          <p>IP: 10.109.8.17</p>
+          <p>Netmask: 255.255.255.0</p>
+          <p>Gateway:10.109.8.1</p>
+          <p>Version: 3.1.5r2</p>
+          <p>Updated: Apr 10, 2019 4:52:10</p>
+          <p>License:Trial, Expires 9/1/2019</p>
+          <p>Uptime: 105 days</p>
+          <p>Since: Mar 31, 2019</p>
+          <p>Serial: Tr23450693</p>
+        </div>
+      </div>
+      <div class="col-sm-4 resources">
+        <div class="title">
+          Resources
+        </div>
+        <div class="content">
+          <table class="resourcesTable" align="center">
+            <tr>
+              <th >Nodes</th>
+              <th>1</th>
+            </tr>
+            <tr>
+              <th>CPU</th>
+              <th>1</th>
+            </tr>
+            <tr>
+              <th>RAM</th>
+              <th>16GB</th>
+            </tr>
+            <tr>
+              <th>Storage</th>
+              <th>5 TB</th>
+            </tr>
+            <tr>
+              <th>Disks</th>
+              <th>5</th>
+            </tr>
+            <tr>
+              <th>Alarms</th>
+              <th>None</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="col-sm-4 storage">
+        <div class="title">
+          Storage
+        </div>
+        <div class="content">
+          <table class="storageTable" align="center">
+            <tr style="border-bottom: 1px solid #ddd;">
+              <th>Disk</th>
+              <th>Capacity</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <th>Disk1</th>
+              <th>1Tb</th>
+              <th>Ok</th>
+            </tr>
+            <tr>
+              <th>Disk2</th>
+              <th>1Tb</th>
+              <th>Ok</th>
+            </tr>
+            <tr>
+              <th>Disk3</th>
+              <th>1Tb</th>
+              <th>Ok</th>
+            </tr>
+            <tr>
+              <th>Disk4</th>
+              <th>1Tb</th>
+              <th>Ok</th>
+            </tr>
+            <tr>
+              <th>Disk5</th>
+              <th>1Tb</th>
+              <th>Ok</th>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="row">
+      <div class="col-sm-12 title" style="background: #FFFFFF">
+        <div class="col-sm-4 name ">
+          Performance Overview
+        </div>
+        <div class="col-sm-8 tag">
+
+        </div>
+      </div>
+      <div class="col-sm-12 content graphbox ">
+        ddd
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 title" style="background: #FFFFFF">
+        <div class="col-sm-4 name ">
+          System Events
+        </div>
+        <div class="col-sm-6 tag">
+
+        </div>
+      </div>
+      <div class="col-sm-12 content systembox">
+        <div class="col-sm-4 box">
+          <p>Time</p>
+          <p>2019/21/04:14:55:12</p>
+          <p>2019/19/18:22:01:54</p>
+        </div>
+        <div class="col-sm-4 box">
+          <p>Event</p>
+          <p>Lost connection with Splunk source</p>
+          <p>Transform failed</p>
+        </div>
+        <div class="col-sm-4 box">
+          <p>Severity</p>
+          <p>High</p>
+          <p>Medium</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

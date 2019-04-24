@@ -1,0 +1,158 @@
+<template>
+  <div class="row ThirdLine">
+    <div class=" col-md-12 component5">
+      <div class="panel panel-info events ">
+       <div class="panel-heading">System events</div>
+       <div class="panel-body">
+         <table>
+             <tr style="border-bottom: 2px solid #ddd">
+               <th>Time:</th>
+               <th>Event:</th>
+               <th>Severity</th>
+             </tr>
+             <tr>
+               <th>2019/21/04:14:55:12</th>
+               <th>Lost connection with Splunk source</th>
+               <th>High</th>
+             </tr>
+             <tr>
+               <th>2019/19/18:22:01:54</th>
+               <th>Transform failed</th>
+               <th>Medium</th>
+             </tr>
+           </table>
+       </div>
+     </div>
+    </div>
+  </div>
+</template>
+
+<script>
+
+</script>
+
+<style scoped>
+  .row.content {height:1200px}
+
+  .sidenav {
+    background-color: #424242;
+    height: 100%;
+  }
+  h2{
+    color:white;
+  }
+  .logged_header{
+    text-align: right;
+  }
+  .nav{
+    margin-top: 60px;
+  }
+  .nav-pills>li.active>a{
+    background-color:#1AB39F;
+  }
+  a{
+    color:white;
+    font-size:18px;
+    font-style:bold;
+  }
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height: auto;}
+  }
+  .header{
+    padding-left: 0px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin: 0px;
+  }
+  .linebottom{
+    border-bottom: 2px solid #bbb;
+  }
+  .line{
+    border: 2px solid 	#bbb;
+  }
+  li{
+    border: 1px solid #1AB39F;
+    border-radius: 7px;
+  }
+  img{
+
+    width: 100px;
+    height: 90px;
+  }
+
+
+  p{
+    font-size:12px;
+  }
+  th{
+    padding-left:10px;
+    padding-right:20px;
+  }
+
+
+  .FirstLine, .SecondLine, .ThirdLine{
+    margin-top: 20px;
+  }
+  .component1, .component2, .component3{
+    height:50%;
+  }
+  .component4{
+    height:30%;
+  }
+  .component5{
+    height:20%;
+  }
+  .system{
+    width:90%;
+    height:100%;
+  }
+  .panel-info{
+    margin-left:20px;
+    margin-right:5%;
+    font-weight: bold;
+    color:black;
+
+  }
+  .panel-info>.panel-heading{
+    color:#424242;
+    background-color:#1ab39f40;
+    border-color:#1ab39f40;
+    border-bottom: 2px solid #bbb;
+  }
+  .title{
+    background-color:#d1dcfc;
+
+  }
+  .resources{
+    width:80%;
+    height:100%;
+  }
+  .storage{
+    width:70%;
+    height:100%;
+  }
+  .performance{
+    margin-top:30px;
+    width:91%;
+    height:90%;
+  }
+  .events{
+    margin-top:30px;
+    width:91%;
+    height:80%;
+  }
+  .table{
+    margin-top:20%;
+    margin-bottom:10%;
+  }
+  .sidecontainer{
+    display:flex;
+  }
+  .logout{
+
+  }
+</style>

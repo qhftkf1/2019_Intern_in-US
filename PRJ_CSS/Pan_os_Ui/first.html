@@ -1,0 +1,22 @@
+<template>
+  <p>{{greeting }} World!</p>
+</template>
+
+<!-- export name system-component -->
+
+<script>
+  module.exports = {
+    data: function(){
+      return{
+        greeting:'Hello'
+      }
+    }
+  }
+</script>
+
+<style scoped>
+  p{
+    font_size:2em;
+    test-align: center;
+  }
+</style>
