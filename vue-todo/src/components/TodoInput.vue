@@ -3,7 +3,7 @@
         <input type="text" v-model="newTodoItem" v-on:keyup.enter="addTodo">
         <span class="addContainer">
             <i class="fas fa-plus addBtn" v-on:click="addTodo"></i>
-           
+
         </span>
         <Modal v-if="showModal" @close="showModal = false">
             <!--
@@ -14,7 +14,7 @@
             <i class="closeModalBtn fas fa-times" @click="showModal = false"></i>
         </h3>
         <h3 slot="body">무언가를 입력하세요!</h3>
-      
+
         </Modal>
     </div>
 </template>
@@ -53,7 +53,7 @@ input:focus{
     outline: none;
 }
 .inputBox {
-    background: white;
+    background: black;
     height:50px;
     line-height: 50px;
     border-radius: 5px;
