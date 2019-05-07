@@ -2,8 +2,8 @@
 <transition name="slide-fade">
   <div v-if="propsdata">
     <ul>
-      <li v-for="boardItem in this.boardItems" v-bind:key= "boardItem.index" class="shadow">
-          <span class= "addContainer">
+      <li v-for="(boardItem, index) in this.boardItems" v-bind:key= "boardItem" class="shadow">
+          <span class= "addContainer" v-on:click="removeBoard(boardItem, index)">
             <i class="fas fa-trash"></i>
           </span>
 
@@ -22,11 +22,12 @@ export default {
     }
   },
   methods: {
-    removeBoard(item) {
-      localStorage.removeItem(boardItems.index);
-      state.todoItems.splice(this.index, 1);
+    removeBoard: function (boardItem, index) {
+      console.log(localStorage.key(index))
+      localStorage.removeItem(localStorage.key(index))
+      this.boardItems.splice(index, 1)
     }
-  }
+  },
   created: function () {
     if (localStorage.length > 0) {
       for (var i = 0; i < localStorage.length; i++) {

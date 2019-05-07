@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     addBoardItem () {
-      const obj = {index: this.i, title: this.title, content: this.content}
+      const obj = {title: this.title, content: this.content}
       localStorage.setItem(this.i++, JSON.stringify(obj))
       this.title = ''
       this.content = ''
