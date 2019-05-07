@@ -1,10 +1,10 @@
 <template>
   <div class="row">
-    <div class="col-3 InternMain_side ">
+    <div class="col-2 InternMain_side ">
         <InternMainSide>
         </InternMainSide>
     </div>
-    <div class="col-9 InternMain_main">
+    <div class="col-10 InternMain_main">
         <InternMainMain>
         </InternMainMain>
     </div>

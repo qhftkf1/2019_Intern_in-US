@@ -23,7 +23,7 @@ export default {
       }
     },
     change () {
-      this.propsdata = !this.propsdata
+      this.$store.state.show = !this.$store.state.show
       this.$emit('changed', this.propsdata)
     }
   }

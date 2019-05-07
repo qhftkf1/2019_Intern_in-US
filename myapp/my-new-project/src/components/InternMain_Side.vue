@@ -1,9 +1,6 @@
 <template>
   <div class="row InternMain_side_menu">
-    <div class="col-4 InternMain_side_menu_left ">
-
-    </div>
-    <div class="col-8 InternMain_side_menu_right">
+    <div class="col-12 InternMain_side_menu_right">
 
       <div v-for="tab in tabs" class="InternMain_side_menu_right_select shadow" v-bind:key="tab" @click="selectTab(tab)" :style="(selectedTab === tab) ? 'background-color: white; ' :''">
         <div class="InternMain_side_menu_right_select_list ">
@@ -37,7 +34,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .InternMain_side, .InternMain_main{
-  height:1500px;
+  height:auto;
 }
 .InternMain_side{
   background-color: #ddd;
@@ -49,13 +46,17 @@ export default {
 }
 .InternMain_side_menu_right{
     padding:0;
+    font-size: 20px;
     font-weight: 900;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 .InternMain_side_menu_right_select{
+
 }
 .InternMain_side_menu_right_select_list{
   margin: 50px 0;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
+  border-style: none;
   /* border-radius: 10px; */
   height: 100%;
   text-align: center;

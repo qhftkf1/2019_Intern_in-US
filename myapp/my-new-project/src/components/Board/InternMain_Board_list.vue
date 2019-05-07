@@ -3,10 +3,14 @@
   <div v-if="propsdata">
     <ul>
       <li v-for="(boardItem, index) in this.boardItems" v-bind:key= "boardItem" class="shadow">
+        <!-- {{boardItem.content}}
           <span class= "addContainer" v-on:click="removeBoard(boardItem, index)">
             <i class="fas fa-trash"></i>
+          </span> -->
+          <span class ="contentText">{{ boardItem }} : {{ boardItem.content }}</span>
+          <span class="removeBtn" v-on:click="removeBoard(boardItem, index)">
+              <i class="fas fa-trash"></i>
           </span>
-
       </li>
     </ul>
   </div>
@@ -23,8 +27,8 @@ export default {
   },
   methods: {
     removeBoard: function (boardItem, index) {
-      console.log(localStorage.key(index))
-      localStorage.removeItem(localStorage.key(index))
+      console.log(boardItem, index)
+      localStorage.removeItem(boardItem)
       this.boardItems.splice(index, 1)
     }
   },
@@ -32,7 +36,7 @@ export default {
     if (localStorage.length > 0) {
       for (var i = 0; i < localStorage.length; i++) {
         if (localStorage.key(i) !== 'loglevel:webpack-dev-server') {
-          this.boardItems.push(JSON.parse(localStorage.getItem(localStorage.key(i))))
+          this.boardItems.push(localStorage.key(i))
         }
       }
     }
@@ -79,5 +83,13 @@ li{
 /* .slide-fade-leave-active below version 2.1.8 */ {
   transform: translateY(10px);
   opacity: 0;
+}
+.removeBtn {
+    margin-left: auto;
+    color: #de4343;
+    padding-right: 20px;
+}
+.contentText{
+  padding-left: 20px;
 }
 </style>
