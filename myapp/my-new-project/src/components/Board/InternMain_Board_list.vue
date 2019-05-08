@@ -1,12 +1,8 @@
 <template>
 <transition name="slide-fade">
-  <div v-if="propsdata">
+  <div v-if="this.$store.state.show">
     <ul>
-      <li v-for="(boardItem, index) in this.boardItems" v-bind:key= "boardItem" class="shadow">
-        <!-- {{boardItem.content}}
-          <span class= "addContainer" v-on:click="removeBoard(boardItem, index)">
-            <i class="fas fa-trash"></i>
-          </span> -->
+      <li v-for="(boardItem, index) in this.$store.state.boardItems" v-bind:key= "boardItem" class="shadow">
           <span class ="contentText">{{ boardItem }} : {{ boardItem.content }}</span>
           <span class="removeBtn" v-on:click="removeBoard(boardItem, index)">
               <i class="fas fa-trash"></i>
@@ -19,28 +15,30 @@
 
 <script>
 export default {
-  props: ['propsdata'],
+
   data: function () {
     return {
-      boardItems: []
+      boardItems: [],
+      show: true
     }
   },
   methods: {
     removeBoard: function (boardItem, index) {
-      console.log(boardItem, index)
-      localStorage.removeItem(boardItem)
-      this.boardItems.splice(index, 1)
-    }
-  },
-  created: function () {
-    if (localStorage.length > 0) {
-      for (var i = 0; i < localStorage.length; i++) {
-        if (localStorage.key(i) !== 'loglevel:webpack-dev-server') {
-          this.boardItems.push(localStorage.key(i))
-        }
-      }
+      this.$store.commit('removeOneBoard', {boardItem, index})
     }
   }
+//   created: function () {
+//     const arr = []
+//     if (localStorage.length > 0) {
+//       for (var i = 0; i < localStorage.length; i++) {
+//         if (localStorage.key(i) !== 'loglevel:webpack-dev-server') {
+//           arr.push(JSON.parse(localStorage.getItem(localStorage.key(i))))
+//         }
+//       }
+//     }
+//     this.boardItems = arr
+//   }
+// }
 }
 </script>
 

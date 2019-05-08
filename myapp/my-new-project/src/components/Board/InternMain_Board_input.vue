@@ -8,7 +8,6 @@
 
 <script>
 export default {
-  props: ['propsdata'],
   data () {
     return {
       newBoardItem: ''
@@ -23,8 +22,7 @@ export default {
       }
     },
     change () {
-      this.$store.state.show = !this.$store.state.show
-      this.$emit('changed', this.propsdata)
+      this.$store.commit('change')
     }
   }
 }

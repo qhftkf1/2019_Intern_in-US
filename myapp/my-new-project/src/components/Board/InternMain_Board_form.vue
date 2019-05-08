@@ -1,6 +1,6 @@
 <template>
   <transition name="slide-fade">
-  <div v-if="!propsdata" class= "formBox">
+  <div v-if="!this.$store.state.show" class= "formBox">
     <div class="formTitle">
       <h2>Title</h2>
     </div>
@@ -29,17 +29,19 @@ export default {
     return {
       title: '',
       content: '',
-      i: 1
+      i: 1,
+      show: ''
     }
   },
   created: function () {
   },
   methods: {
     addBoardItem () {
-      const obj = {title: this.title, content: this.content}
-      localStorage.setItem(this.title, JSON.stringify(obj))
-      this.title = ''
-      this.content = ''
+      if (this.content !== '') {
+        this.$store.commit('addOneBoard', this.content)
+        this.title = ''
+        this.content = ''
+      }
     }
   }
 }
