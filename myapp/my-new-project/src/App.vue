@@ -1,6 +1,5 @@
 <template>
   <div>
-    <router-link to="/chartjs">vue-chartjs</router-link>
     <router-view/>
     <!-- <InternMain></InternMain> -->
   </div>

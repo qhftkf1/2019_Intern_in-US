@@ -1,6 +1,6 @@
 <template>
   <div class="InternMain_main_title">
-    <h1>Board</h1>
+    <slot></slot>
   </div>
 </template>
 

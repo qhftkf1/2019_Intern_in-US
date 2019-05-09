@@ -24,7 +24,6 @@
 
 <script>
 export default {
-  props: ['propsdata'],
   data: function () {
     return {
       title: '',

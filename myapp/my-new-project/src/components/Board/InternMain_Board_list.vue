@@ -18,8 +18,7 @@ export default {
 
   data: function () {
     return {
-      boardItems: [],
-      show: true
+      boardItems: []
     }
   },
   methods: {

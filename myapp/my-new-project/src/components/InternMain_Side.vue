@@ -1,11 +1,11 @@
 <template>
   <div class="row InternMain_side_menu">
-    <div class="col-12 InternMain_side_menu_right">
 
-      <div v-for="tab in tabs" class="InternMain_side_menu_right_select shadow" v-bind:key="tab" @click="selectTab(tab)" :style="(selectedTab === tab) ? 'background-color: white; ' :''">
+    <div class="col-12 InternMain_side_menu_right">
+      <div v-for="tab in this.$store.state.tabs" class="InternMain_side_menu_right_select shadow" v-bind:key="tab" @click="selectTab(tab)" :style="(tab === selectedTab) ? 'background-color: white; ' :''">
         <div class="InternMain_side_menu_right_select_list ">
             {{ tab }}
-        </div>
+          </div>
       </div>
     </div>
   </div>
@@ -18,13 +18,14 @@ export default {
   name: 'InternMain_side_menu',
   data () {
     return {
-      selectedTab: 'Home',
+      selectedTab: '',
       tabs: ['Home', 'Content', 'Board']
     }
   },
   methods: {
     selectTab (tab) {
-      this.selectedTab = tab
+      this.$store.commit('selectTab', tab)
+      this.selectedTab = this.$store.state.selectedTab
     }
   }
 

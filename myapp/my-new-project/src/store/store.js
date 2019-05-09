@@ -8,7 +8,7 @@ const storage = {
     const arr = []
     if (localStorage.length > 0) {
       for (let i = 0; i < localStorage.length; i++) {
-        if (localStorage.key(i) !== 'localStorage:webpack-dev-server') {
+        if (localStorage.key(i) !== 'loglevel:webpack-dev-server') {
           arr.push(JSON.parse(localStorage.getItem(localStorage.key(i))))
         }
       }
@@ -19,7 +19,9 @@ const storage = {
 export const store = new Vuex.Store({
   state: {
     show: false,
-    boardItems: storage.fetch()
+    boardItems: storage.fetch(),
+    selectedTab: '',
+    tabs: ['Home', 'Content', 'Board']
   },
   mutations: {
     change (state) {
@@ -33,6 +35,10 @@ export const store = new Vuex.Store({
     removeOneBoard (state, payload) {
       localStorage.removeItem(payload.boardItem.content)
       state.boardItems.splice(payload.index, 1)
+    },
+    selectTab (state, payload) {
+      console.log(payload)
+      this.state.selectedTab = payload
     }
   }
 })
