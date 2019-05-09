@@ -21,6 +21,7 @@
     "es6-promise": "^4.2.6",
     "hchs-vue-charts": "^1.2.8",
     "vue": "^2.6.10",
+    "vue-chart": "^2.0.0",
     "vue-chartjs": "^3.4.2",
     "vue-chartkick": "^0.5.0",
     "vue-router": "^3.0.1",

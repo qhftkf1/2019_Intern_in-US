@@ -1,7 +1,10 @@
 <template lang="html">
-  <figure class="swing">
-<img src="" width="200" >
-</figure>
+  <div class="">
+    <figure class="swing">
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/5KD4JaWMJDw?list=RD5KD4JaWMJDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </figure>
+  </div>
+
 </template>
 
 <script>
@@ -11,6 +14,7 @@ export default {
 
 <style lang="css" scoped>
 .swing {
+    width:auto;
     animation: swing ease-in-out 1s infinite alternate;
     transform-origin: center -20px;
     float:center;

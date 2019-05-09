@@ -1,45 +1,16 @@
 <template>
+
   <div class="row">
-    <div class="col-3">
-      <div class="line">
-        1
-      </div>
-    </div>
-    <div class="col-9">
-      <div class="line">
-        2
-      </div>
-    </div>
-    <div class="col-4">
-      <div class="line">
-        3
-      </div>
-    </div>
-    <div class="col-4">
-      <div class="line">
-        4
-      </div>
-    </div>
-    <div class="col-4">
-      <div class="line">
-        5
-      </div>
-    </div>
-    <div class="col-9">
-      <div class="line">
-        6
-      </div>
-    </div>
-    <div class="col-3 ">
-      <div class="line">
-        7
-      </div>
-    </div>
+  <vueChartJS></vueChartJS>
   </div>
 </template>
 
 <script>
+import vueChartJS from '@/components/Charts/VueChartJS'
 export default {
+  components: {
+    vueChartJS
+  }
 }
 </script>
 

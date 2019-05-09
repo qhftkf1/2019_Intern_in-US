@@ -3,7 +3,7 @@
   <div v-if="this.$store.state.show">
     <ul>
       <li v-for="(boardItem, index) in this.$store.state.boardItems" v-bind:key= "boardItem" class="shadow">
-          <span class ="contentText">{{ boardItem }} : {{ boardItem.content }}</span>
+          <span class ="contentText">{{ boardItem.index }} : {{ boardItem.content }}</span>
           <span class="removeBtn" v-on:click="removeBoard(boardItem, index)">
               <i class="fas fa-trash"></i>
           </span>
